@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.IO;
 using System.Text;
-using System.Threading.Tasks;
 
 namespace StalkerModTranslator
 {
@@ -10,6 +8,14 @@ namespace StalkerModTranslator
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = Encoding.GetEncoding(1251);
+
+            Console.ForegroundColor = ConsoleColor.White;
+
+            if (args.Length > 0)
+                new StalkerTranslator(args[0], args[1], args[2], args[3], args[4]);
+            else
+                new StalkerTranslator();
         }
     }
 }
