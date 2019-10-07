@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Text;
 
 namespace StalkerModTranslator
@@ -8,7 +7,7 @@ namespace StalkerModTranslator
     {
         static void Main(string[] args)
         {
-            Console.OutputEncoding = Encoding.GetEncoding(1251);
+            //Console.OutputEncoding = Encoding.GetEncoding(1251);
 
             Console.ForegroundColor = ConsoleColor.White;
 
